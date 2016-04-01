@@ -111,15 +111,17 @@ body {
 
 }
 main {
-    width: 271px;
+    width: 269px;
     margin: 0 auto;
 }
 
 h1 {
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 34px;
+    -webkit-text-size-adjust: 100%;
     color: #002eff;
     margin-top: 1em;
+    width: 100%;
 }
 h2 {
     margin-top: 0;
@@ -165,7 +167,7 @@ h2 {
         width: 610px;
     }
     h1 {
-        font-size: 71px;
+        font-size: 75px;
     }
 }
 
@@ -174,7 +176,6 @@ h2 {
         padding-top: 100px;
     }
 }
-
 
 
 
