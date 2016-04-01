@@ -111,13 +111,13 @@ body {
 
 }
 main {
-    width: 244px;
+    width: 240px;
     margin: 0 auto;
 }
 
 h1 {
     margin-bottom: 0;
-    font-size: 1.8em;
+    font-size: 29px;
     color: #002eff;
 }
 h2 {
