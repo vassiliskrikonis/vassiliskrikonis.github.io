@@ -101,9 +101,9 @@ a, a:visited, a:active, a:hover {
 
 body {
     /*font-family: 'Montserrat Alternates', sans-serif;*/
-    /*font-family: 'Montserrat', sans-serif;*/
-    font-family: 'Futura';
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Futura';*/
+    font-size: 16px;
     /*letter-spacing: 0.08em;*/
     text-align: justify;
     background: #1ff7bd;
@@ -111,14 +111,17 @@ body {
 
 }
 main {
-    width: 240px;
+    width: 269px;
     margin: 0 auto;
 }
 
 h1 {
     margin-bottom: 0;
-    font-size: 29px;
+    font-size: 34px;
+    -webkit-text-size-adjust: 100%;
     color: #002eff;
+    margin-top: 1em;
+    width: 100%;
 }
 h2 {
     margin-top: 0;
@@ -126,6 +129,7 @@ h2 {
     text-align: right;
     font-size: 1em;
     color: white;
+    margin-bottom: 1.5em;
 }
 
 .dups .link {
@@ -157,10 +161,10 @@ h2 {
 
 @media (min-width: 600px) {
     body {
-        font-size: 31px;
+        font-size: 28px;
     }
     main {
-        width: 548px;
+        width: 610px;
     }
     h1 {
         font-size: 75px;
@@ -172,7 +176,6 @@ h2 {
         padding-top: 100px;
     }
 }
-
 
 
 
