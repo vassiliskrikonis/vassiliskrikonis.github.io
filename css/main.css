@@ -132,7 +132,7 @@ h2 {
     margin-bottom: 1.5em;
 }
 
-.dups .link {
+/*.dups .link {
     color: #002eff;
     color: yellow;
     text-decoration: underline;
@@ -151,6 +151,15 @@ h2 {
 }
 .sectionz .dups section {
     z-index: 0;
+}*/
+
+a, a:visited {
+  text-decoration: underline;
+  color: yellow;
+}
+a span, a:visited span {
+  color: white;
+  text-decoration: none;
 }
 
 @media (orientation: landscape) {
