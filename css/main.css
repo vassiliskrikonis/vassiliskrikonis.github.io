@@ -103,6 +103,29 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     text-align: justify;
+    min-width: 320px;
+}
+
+main {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 10.4vw;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+  text-align: right;
+  margin-top: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*a, a:visited {
@@ -198,6 +221,15 @@ a span, a:visited span {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
+
+
+
+@media only screen and (min-width: 620px) {
+    h1 {
+      font-size: 65px;
+    }
+}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
