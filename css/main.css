@@ -146,16 +146,9 @@ h1 {
   display: inline-block;
 }
 
-
-/*a, a:visited {
+a .blast {
   text-decoration: underline;
-  color: yellow;
 }
-a span, a:visited span {
-  color: black;
-  text-decoration: none;
-}*/
-
 
 /* ==========================================================================
    Helper classes
