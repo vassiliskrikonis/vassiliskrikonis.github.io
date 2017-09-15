@@ -144,8 +144,12 @@ html {
   background: #502F7E;
   font-weight: bold;*/
 
-  background: #F1D3D3;
+  /*background: #F1D3D3;
   color: #1539CF;
+  font-weight: bold;*/
+
+  background: black;
+  color: white;
   font-weight: bold;
 
   /*color: #F1D3D3;
