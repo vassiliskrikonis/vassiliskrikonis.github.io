@@ -12,8 +12,11 @@ Matter.World.add(engine.world, bodies);
 var mouseBody = Matter.Bodies.circle(0, 0, 30, {isStatic: true});
 Matter.World.add(engine.world, mouseBody);
 
-// when moving touch event (from hammer.js) update mouseBody position
-onTouchMove(setPosition(mouseBody));
+onTouchMove((e) => {
+  Matter.Body.setPosition(mouseBody, Matter.Vector.create(e.center.x, e.center.y));
+  if(e.pointerType != 'mouse') {
+  }
+});
 
 //
 // Matter.Events.on(engine, 'afterUpdate', function() {
@@ -48,17 +51,9 @@ function blastedToBodies(elements) {
 }
 
 function onTouchMove(f) {
-  var hammertime = new Hammer(document.body);
+  var hammertime = this.__hammertime || (this.__hammertime = new Hammer(document.body));
   hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
   hammertime.on('pan', f);
-}
-
-function setPosition(body) {
-  return function(e) {
-    if(e.pointerType != 'mouse') {
-      Matter.Body.setPosition(body, Matter.Vector.create(e.center.x, e.center.y));
-    }
-  }
 }
 
 function transformElementsFrom(bodies) {
