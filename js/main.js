@@ -42,7 +42,7 @@ function blastedToDomBodies(elements) {
 }
 
 function onTouchMove(f) {
-  var hammertime = this.__hammertime || (this.__hammertime = new Hammer(document.body));
+  var hammertime = self.__hammertime || (self.__hammertime = new Hammer(document.body));
   hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
   hammertime.on('pan', f);
 }
