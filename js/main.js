@@ -1,4 +1,5 @@
 import Matter from 'matter-js';
+import Hammer from 'hammerjs';
 
 // blast dom into .blast spans
 var blasted = $('p').blast({ delimiter: "word" }).toArray();
